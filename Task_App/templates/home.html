@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  <title>Home Page</title>
+{% endblock title %}
+
+{% block content %}
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-4">
+          <img src="{% static 'images/homepage.png' %}" alt="Notes" class="shadow" width="320" height="210">
+      </div>
+      <div class="col-lg-4">
+          <img src="{% static 'images/homepage.png' %}" alt="Notes" class="shadow" width="320" height="210">
+      </div>
+      <div class="col-lg-4">
+          <img src="{% static 'images/homepage.png' %}" alt="Notes" class="shadow" width="320" height="210">
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-auto">
+            <center class="h1 text-primary"><p>Welcome to Home page</p></center>
+            <center class="h2"><p>Quick and easy to use. Anytime, Anywhere!</p></center>
+            <center class="h3"><p>Stay Safe, Stay Home</p></center>
+ 
+            <center><a href={% url 'task' %}><button type="button" class="btn btn-primary btn-lg mt-3 shadow">Get Started</button></a></center>
+            </br>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
